@@ -1,0 +1,107 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.first {
+    color: rgb(255, 0, 0);
+}
+
+#first {
+    color: aqua;
+}
+
+h1 {
+    color: green;
+}
+
+h2 {
+    color: #00FFFF;
+}
+
+
+/*
+h2:hover {
+    color: pink;
+}
+*/
+
+/*   This is a comment in CSS */
+
+/*
+Color : 
+1. Plain English notation
+2. HEXA DECIMAL notation -> #_ _ _ _ _ _ -> #FF0000, #0000FF, #00FF00
+                             R R G G B B
+    DECIMAL -> base is 10 -> 0 to 9
+    HEXA DECIMAL -> base is 16 -> 0 to 9, A to F
+3. RGB -> Red Green Blue -> rgb( _ , _ , _ ); 0 to 255 -> [256]
+4. RGBA -> rgba( , , , opacity) -> Opacity ranges from 0 to 1.
+5. HSL -> Hue Saturation Lightness -> hsl(0,0,0)
+6. HSLA ->  Hue Saturation Lightness opacity -> hsl(0,0,0,o)
+*/
+
+/*
+Measures :
+1. Absolute -> px, (mm, cm, in - Explore)
+2. Percentage -> 50%
+3. Relative -> parent ((root) - Explore)
+            -> screen width -> view port -> basically the entire area you can see on the screen.
+            width -> vw
+            height -> vh
+*/
+
+
+p {
+    font-size: 20px;
+}
+
+.container {
+    /* background-color: blanchedalmond; */
+    overflow-y: auto;
+    /* background-color: blanchedalmond; */
+    width: 250px;
+    /* height: 294px; */
+    max-height: 200px;
+}
+
+/* Gradiants -> Linear, Radial, (conic -> Explore)*/
+.container {
+    background: radial-gradient(#e66465, #9198e5);
+}
+
+.container:hover {
+    box-shadow: 10px 5px 5px green;
+}
+
+.checkbox:checked {
+    box-shadow: 10px 5px 5px green;
+}
+
+.one {
+    margin: 30px 50px 70px 90px;  /* top right bottom left */
+    margin : 40px 80px; /* top-bottom, left-right*/
+    padding: 50px;
+    width: 100px;
+    height: 100px;
+    display: inline;
+    background-color: #9198e5;
+    border: 2px dashed black;
+}
+
+#two {
+    width: 100px;
+    height: 100px;
+    background-color: #e66465;
+}
+
+a:active {
+    color: gold;
+}
+
+/*
+Flexbox.
+What is the importance of it?
+How can we reduce the complexity of forming layout?
+*/
