@@ -1,0 +1,25 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.parent {
+    display: flex;
+    flex-direction: column;
+    .child1 {
+        height: 100px;
+        width: 100px;
+        background-color: blueviolet;
+    }
+    .child2 {
+        height: 100px;
+        width: 100px;
+        background-color: green;
+    }
+    .child3 {
+        height: 100px;
+        width: 100px;
+        background-color: blue;
+    }
+}
