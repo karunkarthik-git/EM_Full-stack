@@ -1,0 +1,49 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    margin: 100px auto;
+    width: 400px;
+    background-color: #4d2671;
+    border-radius: 40px;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+}
+
+.container h1 {
+    text-align: center;
+    color: white;
+    margin-top: 6px;
+}
+
+.container .header {
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.container .header .task-input {
+    outline: none;
+    width: 100%;
+    padding: 4px;
+    margin-right: 8px;
+}
+
+.container .header .add {
+    padding: 5px;
+}
+
+.container .list {
+    padding: 0 20px;
+    color: white;
+    font-size: 16px;
+    margin-bottom: 12px;
+}
+
+.container .list li {
+    padding: 3px;
+}
