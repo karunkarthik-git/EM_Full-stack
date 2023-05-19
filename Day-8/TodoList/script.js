@@ -42,3 +42,22 @@ function removeElementFromArray(itemIndex) {
 //     const targetIndex = arr.findIndex(element => element === targetElement); // uses binary search -> O(logn)
 //     return [...arr.slice(0,targetIndex), ...arr.slice(targetIndex+1)]; // O(2n) = O(n)
 // }
+
+function saveToLocalStorage() {
+    if(listItems.length === 0) {
+        console.warn("You're trying to save empty data.");
+        return;
+    }
+    const dataString = JSON.stringify(listItems);
+    localStorage.setItem("todoListItems", dataString);
+}
+
+function loadFromLocalStorage() {
+    const dataString = localStorage.getItem("todoListItems");
+    listItems = JSON.parse(dataString);
+    updateDisplay(listItems);
+}
+
+function clearLocalStorage() {
+    localStorage.clear();
+}

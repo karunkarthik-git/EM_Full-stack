@@ -47,3 +47,14 @@
 .container .list li {
     padding: 3px;
 }
+
+.container .footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 12px;
+}
+
+.container .footer button {
+    padding: 5px;
+}
