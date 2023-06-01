@@ -1,0 +1,11 @@
+1. Material Icons CDN = https://fonts.googleapis.com/icon?family=Material+Icons
+2. Youtube Logo = https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRVL9tR5NZx5X5Nb2P6yerlgN0IEvBe1HCu-zprEmrL&s
+
+
+Video = 
+Sample Channel Thumbnail = https://i.ytimg.com/vi/5qap5aO4i9A/hq720_live.jpg?sqp=CMCouoQG-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLBEAq5h1EpOsDCkz0iqJ3f38fWyWQ
+Sample Video Thumbnail = https://yt3.ggpht.com/ytc/AAUvwnhGIymQGp3jRMECbTCBSRAUqi8sKbATpWowQG44CA=s68-c-k-c0x00ffffff-no-rj
+Video URL = https://www.youtube.com/channel/UCmo0ZANU_oN_hWy77Hjuuxg
+
+Styles =
+Fonts - https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap
