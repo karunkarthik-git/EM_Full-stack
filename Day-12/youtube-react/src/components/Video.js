@@ -1,16 +1,17 @@
-const Video = () => {
+const Video = (props) => {
+    const { data } = props;
     return (
-        <div class="video">
-            <div class="video_thumbnail">
-                <img src={"https://i.ytimg.com/vi/5qap5aO4i9A/hq720_live.jpg?sqp=CMCouoQG-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLBEAq5h1EpOsDCkz0iqJ3f38fWyWQ"} alt="channel-logo"/>
+        <div className="video">
+            <div className="video_thumbnail">
+                <img src={data.thumbnails.default.url} alt="channel-logo"/>
             </div>
-            <div class="video_details">
-                <div class="author">
+            <div className="video_details">
+                <div className="author">
                     <img src={"https://yt3.ggpht.com/ytc/AAUvwnhGIymQGp3jRMECbTCBSRAUqi8sKbATpWowQG44CA=s68-c-k-c0x00ffffff-no-rj"} alt="author-img"/>
                 </div>
-                <div class="title">
-                    <h3>Some random video</h3>
-                    <a href={"https://www.youtube.com/channel/UCmo0ZANU_oN_hWy77Hjuuxg"} target="_blank">ABC</a>
+                <div className="title">
+                    <h3>{data.title}</h3>
+                    <a href={"https://www.youtube.com/channel/UCmo0ZANU_oN_hWy77Hjuuxg"} target="_blank">{data.channelTitle}</a>
                     <span>12.4 M Views . 1 Year ago </span>
                 </div>
             </div>

@@ -1,9 +1,14 @@
-const VideoContainer = ({children}) => {
+import Video from "./Video";
+
+const VideoContainer = (props) => {
+    const { videoList } = props;
     return (
-        <div class="videos">
-            <h1>Recommened</h1>
-            <div class="video_container">
-                {children}
+        <div className="videos">
+            <h1>Recommended</h1>
+            <div className="video_container">
+            {videoList.map((video, index)=>{
+                return <Video key={index} data={video.snippet}/>
+            })}
             </div>
         </div>
     )
