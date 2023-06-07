@@ -7,7 +7,7 @@ const VideoContainer = (props) => {
             <h1>Recommended</h1>
             <div className="video_container">
             {videoList.map((video, index)=>{
-                return <Video key={index} data={video.snippet}/>
+                return <Video key={index} videoId={video.id.videoId} data={video.snippet}/>
             })}
             </div>
         </div>

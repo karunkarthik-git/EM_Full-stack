@@ -4,7 +4,8 @@ import getVideoList from "../apis/youtube-service";
 const Header = (props) => {
     const [inputValue, setInputValue] = useState('');
     const getVideos = (searchValue) => {
-        getVideoList(searchValue).then((response)=>{
+        getVideoList(searchValue)
+        .then((response)=>{
             if (response.status === 200) {
                 props.setList(response.data.items)
             }

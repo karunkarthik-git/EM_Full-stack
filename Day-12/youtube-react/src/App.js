@@ -1,16 +1,18 @@
-import { useState } from 'react';
-import Header from "./components/Header";
-import Sidebar from "./components/Sidebar";
-import Video from "./components/Video";
-import VideoContainer from "./components/VideoContainer";
+import { BrowserRouter, Routes, Route, Link } from 'react-router-dom';
+import Main from './Main';
+import NotFound from './NotFound';
+import VideoPlayer from './VideoPlayer';
 
 function App() {
-  const [list, setList] = useState([]);
   return (
     <div>
-      <Header setList={setList}/>
-      <Sidebar/>
-      <VideoContainer videoList={list} />
+    <BrowserRouter>
+        <Routes>
+          <Route path='/' element={<Main/>} />
+          <Route path='/video/:videoId' element={<VideoPlayer/>} />
+          <Route path='*' element={<NotFound/>} />
+        </Routes>
+      </BrowserRouter>
     </div>
   );
 }
